@@ -1,0 +1,55 @@
+@use "text";
+@use "colors";
+
+@mixin flexContainer($x, $y, $z) {
+    display: flex;
+    justify-content: $x;
+    align-items: $y;
+    flex-direction: $z;
+}
+
+@mixin listasMenu() {
+    @include text.signika("SignikaNegative-Light.ttf", "Light");
+    list-style-type: none;
+    font-family: "Signika-Light", Helvetica, sans-serif;
+    color: colors.$especial-texts;
+    font-size: 1em;
+}
+
+@mixin navegaçãoItens() {
+    li {
+        @include listasMenu();
+        transition: all 0.3s ease-in;
+
+        &:hover {
+            color: colors.$effects-lists;
+        }
+    }
+}
+
+@mixin textos {
+    font-family: "Signika-Light", Helvetica, sans-serif;
+    font-size: 1em;
+    color: colors.$all-texts;
+}
+
+@mixin Titles() {
+    @include text.signika("SignikaNegative-Regular.ttf", "Regular");
+    font-family: "SignikaNegative-Medium", Helvetica, sans-serif;
+    font-size: 1.2em;
+    color: colors.$titles;
+}
+
+@mixin Subtitles() {
+    @include text.signika("SignikaNegative-Medium.ttf", "Medium");
+    font-family: "SignikaNegative-Medium", Helvetica, sans-serif;
+    font-size: 1.2em;
+    color: colors.$sub-titles;
+    text-decoration: underline;
+}
+
+@mixin buttons() {
+    border-radius: 10px;
+    color: transparent;
+    background-color: colors.$button-all;
+}

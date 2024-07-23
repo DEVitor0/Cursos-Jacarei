@@ -1,0 +1,9 @@
+$signika: "../../fonts/Signika_Negative/";
+
+@mixin signika($definicao, $nome) {
+    @font-face {
+        font-family: "Signika-#{$nome}";
+        src: url("#{$signika}#{$definicao}");
+    }
+}
+
