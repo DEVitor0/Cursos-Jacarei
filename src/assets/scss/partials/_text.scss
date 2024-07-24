@@ -1,4 +1,5 @@
-$signika: "../../fonts/Signika_Negative/";
+$signika: "../../../src/assets/fonts/Signika_Negative/";
+$roboto: "../../../src/assets/fonts/Roboto/";
 
 @mixin signika($definicao, $nome) {
     @font-face {
@@ -7,3 +8,9 @@ $signika: "../../fonts/Signika_Negative/";
     }
 }
 
+@mixin roboto($definicao, $nome) {
+    @font-face {
+        font-family:"Roboto-#{$nome}";
+        src: url("#{$roboto}#{$definicao}");
+    }
+}

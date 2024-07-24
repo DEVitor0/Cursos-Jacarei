@@ -8,28 +8,29 @@
     flex-direction: $z;
 }
 
-@mixin listasMenu() {
+@mixin menuLists() {
     @include text.signika("SignikaNegative-Light.ttf", "Light");
     list-style-type: none;
     font-family: "Signika-Light", Helvetica, sans-serif;
     color: colors.$especial-texts;
-    font-size: 1em;
+    font-size: 1.3em;
 }
 
-@mixin navegaçãoItens() {
+@mixin navegationItems() {
     li {
-        @include listasMenu();
-        transition: all 0.3s ease-in;
+        @include menuLists();
+        transition: all 0.3s ease-out;
+        cursor: pointer;
 
         &:hover {
-            color: colors.$effects-lists;
+            color: colors.$especial-texts-2;
         }
     }
 }
 
-@mixin textos {
+@mixin texts {
     font-family: "Signika-Light", Helvetica, sans-serif;
-    font-size: 1em;
+    font-size: 1.1em;
     color: colors.$all-texts;
 }
 
@@ -49,7 +50,11 @@
 }
 
 @mixin buttons() {
-    border-radius: 10px;
-    color: transparent;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
     background-color: colors.$button-all;
+    font-family: "Signika-Light", Helvetica, sans-serif;
+    cursor: pointer;
 }
