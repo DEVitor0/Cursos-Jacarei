@@ -240,7 +240,6 @@
     main {
         width: 100%;
         @include components.flexContainer(center, center, column);
-        background-color: components.$background;
 
         .sections {
             width: 90%;
@@ -280,10 +279,11 @@
                     &__button {
                         @include components.buttons();
                         width: 180px;
-                        font-size: 1.1em;
+                        font-size: 1.3em;
                         padding: clamp(3px, 0.938vw, 9px);
-                        // color: white;
-                        // background-color: #ffbb00;
+                        color: rgb(0, 0, 0);
+                        background-color: #ffbb00;
+                        border: 3px solid black;
                     }
                 }
 
