@@ -29,21 +29,20 @@
 }
 
 @mixin texts {
-    font-family: "Signika-Light", Helvetica, sans-serif;
+    font-family: "Rubik-Light", Helvetica, sans-serif;
     font-size: 1.1em;
     color: colors.$all-texts;
 }
 
 @mixin Titles() {
-    @include text.signika("SignikaNegative-Regular.ttf", "Regular");
-    font-family: "SignikaNegative-Medium", Helvetica, sans-serif;
-    font-size: 1.2em;
+    @include text.rubik("Rubik-Light.ttf", "Light");
+    font-family: "Rubik-Light", Helvetica, sans-serif;
+    font-size: 3vw;
     color: colors.$titles;
 }
 
 @mixin Subtitles() {
-    @include text.signika("SignikaNegative-Medium.ttf", "Medium");
-    font-family: "SignikaNegative-Medium", Helvetica, sans-serif;
+    font-family: "Rubik-Light", Helvetica, sans-serif;
     font-size: 1.2em;
     color: colors.$sub-titles;
     text-decoration: underline;
@@ -53,8 +52,8 @@
     border: none;
     padding: 10px;
     border-radius: 20px;
-    color: white;
+    color: colors.$all-texts;
     background-color: colors.$button-all;
-    font-family: "Signika-Light", Helvetica, sans-serif;
+    font-family: "Rubik-Light", Helvetica, sans-serif;
     cursor: pointer;
 }
